@@ -84,7 +84,37 @@
     <div id="level" class="flex flex-wrap gap-5 justify-center">
 
     </div>
+
   </section>
+
+  <section id="loading" class="flex justify-center items-center py-10 hidden">
+    <span class="loading loading-infinity loading-xl"></span>
+  </section>
+
+ <section id="load-level" class="bg-base-300 w-11/12 mx-auto mt-10 mb-20 p-15 rounded-sm grid grid-cols-3 gap-10">
+
+    <div class="font-bangla text-center col-span-full space-y-2">
+      <p class="text-[16px] font-semibold text-gray-400">আপনি এখনো কোন Lesson Select করেন নি।</p>
+      <h1 class="text-4xl font-bold">একটি Lesson Select করুন।</h1>
+    </div>
+
+ </section>
+
+ <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
   
 
   <script src="./script.js"></script>
