@@ -4,6 +4,13 @@ const loadSynonyms = (arr) => {
   return htmlElements.join(" ");
 }
 
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
+
+
 const manageLoading = (status) => {
   if(status == true){
     document.getElementById("loading").classList.remove("hidden");
@@ -100,7 +107,7 @@ const displayLevelData = (words) => {
 
         <div class="flex justify-between">
           <button onclick = "loadWordDetails(${word.id})" class="btn"><i class="fa-solid fa-circle-info"></i></button>
-          <button class="btn"><i class="fa-solid fa-volume-high"></i></button>
+          <button onclick = "pronounceWord('${word.word}')" class="btn"><i class="fa-solid fa-volume-high"></i></button>
         </div>
       </div>
     

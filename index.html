@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+<!-- navbar  -->
   <header>
     <div class="navbar bg-base-100 shadow-sm ">
   <div class="navbar-start">
@@ -55,7 +55,7 @@
 </div>
   </header>
 
-
+<!-- hero section  -->
   <main class="w-11/12 mx-auto flex gap-5 items-center flex-col-reverse md:flex-row">
  <div class="flex-1 text-center md:text-left">
     <h1 class="text-5xl font-bold"><span class="text-sky-500">English</span> is Easy!!</h1>
@@ -76,6 +76,7 @@
  </div>
   </main>
 
+  <!-- level section  -->
   <section>
     <div class="mb-8">
       <h2 class="text-4xl font-bold text-center"><span class="text-sky-500">Let's</span> Learn Vocabularies</h2>
@@ -87,11 +88,35 @@
 
   </section>
 
+
+<!-- search btn  -->
+  <section class="hidden">
+    <label class="input">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.3-4.3"></path>
+    </g>
+  </svg>
+  <input type="search" required placeholder="Search" />
+</label>
+  </section>
+
+
+ <!-- loading  -->
   <section id="loading" class="flex justify-center items-center py-10 hidden">
     <span class="loading loading-infinity loading-xl"></span>
   </section>
 
- <section id="load-level" class="bg-base-300 w-11/12 mx-auto mt-10 mb-20 p-15 rounded-sm grid grid-cols-3 gap-10">
+
+  <!-- lesson load section  -->
+ <section id="load-level" class="bg-base-300 w-11/12 mx-auto mt-10 mb-20 p-15 rounded-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
     <div class="font-bangla text-center col-span-full space-y-2">
       <p class="text-[16px] font-semibold text-gray-400">আপনি এখনো কোন Lesson Select করেন নি।</p>
@@ -100,6 +125,8 @@
 
  </section>
 
+
+ <!-- modula section  -->
  <!-- Open the modal using ID.showModal() method -->
 <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -115,8 +142,49 @@
     </div>
   </div>
 </dialog>
-  
 
+<!-- FAQ section  -->
+
+
+<section>
+  <h1 class="text-center text-4xl py-10 font-bold"><span class="text-sky-400">Frequently</span>Asked Questions</h1>
+
+  <div>
+    
+  </div>
+</section>
+
+
+
+
+
+<!-- footer section  -->
+
+
+<footer class="bg-sky-100 py-20">
+  <div  class="w-11/12 mx-auto grid gap-5 md:gap-100 grid-cols-1 md:grid-cols-2">
+      <div class="footer-left space-y-3">
+       <a href="" class=" flex items-center gap-1">
+       <span class="font-bold text-[16px]">English</span>
+       <img src="./assets/logo.png" alt="">
+       <span class="font-bangla text-[16px] font-semibold">জানালা</span>
+       </a>
+       <h1 class="font-bangla text-gray-500">ইংরেজি শিখুন সহজে</h1>
+       <p class="text-gray-500">Providing ED-Tech Applications since 2025</p>
+     </div>
+
+    <div class="footer-right space-y-2">
+      <h1 class="font-semibold">FOLLOW US</h1>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+    </div>
+  </div>
+</footer>
+  
+<!-- javascript add  -->
   <script src="./script.js"></script>
 </body>
 </html>
