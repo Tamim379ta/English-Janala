@@ -133,5 +133,14 @@ for( let lesson of lessons) {
 
 }
 
+const showFaqAns = (btn) => {
+const faqAns = btn.closest(".faq-item").querySelector(".faq-ans");
+
+faqAns.classList.toggle("hidden");
+
+btn.textContent = faqAns.classList.contains("hidden") ? "+" : "-";
+}
+
+
 loadLesson();
 
